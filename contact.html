@@ -24,8 +24,7 @@
     <style type="text/css">
         #map{
         min-height: 400px;
-        width: 50%;
-        margin: 0 auto;
+        width: 100%;
         }
         #data{
         margin:0 auto;
@@ -33,46 +32,30 @@
         text-align: center;
         }
         </style>
-        <!-- AIzaSyAlMLRrlwTKxYy4Y2pL935OnSBN7yzPWQQ -->
         <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyABRpIVp4FNdp70lsNRIOMPk4uK_haH2xA&callback=initMap">
-        // <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAlMLRrlwTKxYy4Y2pL935OnSBN7yzPWQQ&callback=initMap">
          </script>
-         
- <script type="text/javascript">
-    var x = navigator.geolocation;
-    x.getCurrentPosition(success,failure);
-  
-    function success(position){
-    var Latitude= position.coords.latitude;
-    var Longitude= position.coords.longitude;
-     document.getElementById("data").innerHTML="latitude="+Latitude+"<br>longitude="+Longitude;
-    var coords=new google.maps.LatLng(Latitude,Longitude);
-  
-    var mapOptions={
-    zoom:15,
-    center: coords,
-    mapTypeId:google.maps.MapTypeId.ROADMAP
-    }
-    var map= new google.maps.Map(document.getElementById("map"),mapOptions);
-  var marker= new google.maps.Marker({map:map,position:coords});
-    }
-    function failure(){
-    alert("Something went wrong..")
-    }
-   </script>
+         <script type="text/javascript">
+          var x = navigator.geolocation;
+          x.getCurrentPosition(success,failure);
+        
+          function success(position){
+          var Latitude= 30.131568303279323;
+          var Longitude= 77.29295260460033;
+          var coords=new google.maps.LatLng(Latitude,Longitude);
+        
+          var mapOptions={
+          zoom:18,
+          center: coords,
+          mapTypeId:google.maps.MapTypeId.ROADMAP
+          }
+          var map= new google.maps.Map(document.getElementById("map"),mapOptions);
+        var marker= new google.maps.Marker({map:map,position:coords});
+          }
+          function failure(){
+          alert("Something went wrong..")
+          }
+         </script>
 </head>
-<!-- ? Preloader Start -->
-<div id="preloader-active">
-    <div class="preloader d-flex align-items-center justify-content-center">
-        <div class="preloader-inner position-relative">
-            <div class="preloader-circle"></div>
-            <div class="preloader-img pere-text">
-                <img src="assets/img/logo/loder.png" alt="">
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Preloader Start -->
 <header>
     <!-- Header Start -->
     <div class="header-area header-transparent">
@@ -186,21 +169,21 @@
                     <div class="media contact-info">
                         <span class="contact-info__icon"><i class="ti-home"></i></span>
                         <div class="media-body">
-                            <h3>Buttonwood, California.</h3>
-                            <p>Rosemead, CA 91770</p>
+                            <h3>2nd Floor, Ahuja Hardware,Bhatia Building</h3>
+                            <p>YamunaNagar, Haryana (135001)</p>
                         </div>
                     </div>
                     <div class="media contact-info">
                         <span class="contact-info__icon"><i class="ti-tablet"></i></span>
                         <div class="media-body">
-                            <h3>+1 253 565 2365</h3>
-                            <p>Mon to Fri 9am to 6pm</p>
+                            <h3>+91-93558-91011</h3>
+                            <h3>+91-89291-91011</h3>
                         </div>
                     </div>
                     <div class="media contact-info">
                         <span class="contact-info__icon"><i class="ti-email"></i></span>
                         <div class="media-body">
-                            <h3>support@colorlib.com</h3>
+                            <h3>iiceynr@gmail.com</h3>
                             <p>Send us your query anytime!</p>
                         </div>
                     </div>
