@@ -1,0 +1,30 @@
+#include<iostream>
+class complex
+{  
+    int real,img;
+    public:
+       void getdata()
+       {
+           cout<<"enter real part: "; cin>>real;
+           cout<<"enter imaginary part: "; cin>>img;
+       }
+       void putdata()
+       {
+           cout<<real<<"+i<<img<<endl;
+       }
+       void multiply(complex ob1,complex ob2)
+       {
+           real = ob1.real*ob2.real-ob1.img*ob2.img;
+           img = ob1.real*ob2.img+ ob1.img*ob2.real;
+           
+       }
+}
+int main()
+{
+    complex c1,c2,c3;
+    c1.getdata();
+    c2.getdata();
+    c3.multiply(c1,c2);
+    c3.putdata();
+    return 0;
+}
