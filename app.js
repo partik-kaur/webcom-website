@@ -9,6 +9,9 @@ app.set('views','views');
 app.get('/',(req,res)=>{
     res.render('index')
 })
+app.get('/about',(req,res)=>{
+    res.render('about-us')
+})
 
 app.listen(8500,()=>{
     console.log("App running on 8500");
