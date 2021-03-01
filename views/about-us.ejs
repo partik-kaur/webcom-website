@@ -1,53 +1,10 @@
 <%- include('./partials/head') %>
 
     <!-- ? Preloader Start -->
-    <%- include('./partials/preloader') %>
+ <%- include('./partials/preloader') %>
 
     <!-- Preloader Start -->
-    <header>
-        <!-- Header Start -->
-        <div class="header-area header-transparent">
-            <div class="main-header ">
-                <div class="header-bottom  header-sticky">
-                    <div class="container-fluid">
-                        <div class="row align-items-center">
-                            <!-- Logo -->
-                            <div class="col-xl-2 col-lg-2">
-                                <div class="logo">
-                                    <a href="index.html"><img src="assets/img/logo/logo.png" alt=""></a>
-                                </div>
-                            </div>
-                            <div class="col-xl-10 col-lg-10">
-                                <div class="menu-wrapper d-flex align-items-center justify-content-end">
-                                    <!-- Main-menu -->
-                                    <div class="main-menu d-none d-lg-block">
-                                        <nav>
-                                            <ul id="navigation"> 
-                                                <li><a href="index.html">Home</a></li>
-                                                <li><a href="about-us.html">About Us</a></li>     
-                                                <li><a href="packages.html">Courses</a></li>
-                                                <li><a href="gallery.html">Gallery</a></li>
-                                                <li><a href="trainers.html">Our Trainers</a></li>
-                                               
-                                                <!-- Button -->
-                                                <li class="button-header margin-left "><a href="contact.html" class="btn">Contact</a></li>
-                                               
-                                            </ul>
-                                        </nav>
-                                    </div>
-                                </div>
-                            </div> 
-                            <!-- Mobile Menu -->
-                            <div class="col-12">
-                                <div class="mobile_menu d-block d-lg-none"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Header End -->
-    </header>
+    <%- include('./partials/navbar') %>
     <main>
         <!-- Slider Area Start-->
         <div class="slider-area slider-bg ">
@@ -66,7 +23,7 @@
             </div>    
             <!-- Slider Shape -->
             <div class="slider-shape d-none d-lg-block">
-                <img class="slider-shape1" src="assets/img/hero/top-left-shape.png" alt="">
+                <img class="slider-shape1" src="/img/hero/top-left-shape.png" alt="">
             </div>
         </div>
         <!-- Slider Area End -->
@@ -77,7 +34,7 @@
                     <div class="col-xl-5 col-lg-5 col-md-8 col-sm-10">
                         <!-- about-img -->
                         <div class="about-img ">
-                            <img src="assets/undraw_Data_trends_re_2cdy.svg" alt="">
+                            <img data-animation="fadeInLeft" data-delay="1s" src="/undraw_Data_trends_re_2cdy.svg" alt="">
                         </div>
                     </div>
                     <div class="col-xl-7 col-lg-7 col-md-12">
@@ -113,7 +70,7 @@
                     <div class="col-xl-5 col-lg-5 col-md-8 col-sm-10">
                         <!-- about-img -->
                         <div class="about-img ">
-                            <img src="assets/undraw_Co_workers_re_1i6i.svg" alt="">
+                            <img src="/undraw_Co_workers_re_1i6i.svg" alt="">
                         </div>
                     </div>
                 </div>
@@ -121,12 +78,12 @@
         </div>
         <!-- About-2 Area End -->
     </main>
-    <%- include('./partials/footer') %>
+<%- include('./partials/footer') %>
 
       <!-- Scroll Up -->
     
-      <%- include('./partials/backtotop') %>
+<%- include('./partials/backtotop') %>
 
     <!-- JS here -->
 
-    <%- include('./partials/bottom') %>
+<%- include('./partials/bottom') %>
