@@ -10,8 +10,8 @@ Router.get('/about',(req,res)=>{
 Router.get('/gallery',(req,res)=>{
     res.render('gallery')
 })
-Router.get('/packages',(req,res)=>{
-    res.render('packages')
+Router.get('/courses',(req,res)=>{
+    res.render('courses')
 })
 Router.get('/trainers',(req,res)=>{
     res.render('trainers')
