@@ -10,29 +10,6 @@
         text-align: center;
         }
         </style>
-        <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyABRpIVp4FNdp70lsNRIOMPk4uK_haH2xA&callback=initMap">
-         </script>
-         <script type="text/javascript">
-          var x = navigator.geolocation;
-          x.getCurrentPosition(success,failure);
-        
-          function success(position){
-          var Latitude= 30.131568303279323;
-          var Longitude= 77.29295260460033;
-          var coords=new google.maps.LatLng(Latitude,Longitude);
-        
-          var mapOptions={
-          zoom:18,
-          center: coords,
-          mapTypeId:google.maps.MapTypeId.ROADMAP
-          }
-          var map= new google.maps.Map(document.getElementById("map"),mapOptions);
-        var marker= new google.maps.Marker({map:map,position:coords});
-          }
-          function failure(){
-          alert("Something went wrong..")
-          }
-         </script>
 </head>
 <body>
 <%- include('./partials/navbar') %>
@@ -65,9 +42,12 @@
 
 
 <!-- <p id="data"></p> -->
-<div id="map"></div>
-
-
+<!-- <div id="map"></div> -->
+<div class="row">
+    <div class="col-sm-12">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1025.9026258127317!2d77.29290225581835!3d30.131071798081162!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5301b91e2d00d8ff!2sWEBCOM%20TECHNOLOGIES!5e0!3m2!1sen!2sin!4v1615277515778!5m2!1sen!2sin" 
+style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</div></div>
             <div class="row">
                 <div class="col-12">
                     <h2 class="contact-title">Get in Touch</h2>
